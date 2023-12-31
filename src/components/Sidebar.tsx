@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 const Sidebar = () => {
     const [url] = React.useState(window.location)
-    const activeStyle = "bg-gray-700 rounded-sm"
+    const activeStyle = "bg-gray-700 rounded-sm py-1"
     return (
         <div className="min-h-screen flex flex-col justify-between bg-black sm:text-sm md:text-lg text-center p-2 text-white">
             <div>

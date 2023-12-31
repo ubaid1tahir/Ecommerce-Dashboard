@@ -23,7 +23,6 @@ ChartJS.register(
   Legend
 )
 const LineChart = () => {
-  const labels = ["abc", "abc2", "abc3", "abc4"]
 
   const options = {
     responsive: true,
@@ -32,8 +31,7 @@ const LineChart = () => {
         position: "bottom"
       },
       title: {
-        display: true,
-        text: "Sales"
+        display: false
       }
     }
   }
@@ -50,7 +48,7 @@ const LineChart = () => {
     ]
   }
   return (
-    <div className='rounded-sm md:w-1/2 md:h-1/2'>
+    <div className='rounded-sm md:min-w-[47vw] items-center md:h-1/2 my-auto'>
       <Line data={data} options={options} />
     </div>
   )
@@ -58,6 +56,17 @@ const LineChart = () => {
 
 export const DoughnutChart = () => {
 
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "bottom"
+      },
+      title: {
+        display: true
+      }
+    }
+  }
   const data = {
     labels : ["Order placed", "Pending orders"],
     datasets: [
@@ -72,9 +81,8 @@ export const DoughnutChart = () => {
   }
 
   return (
-    <div className='rounded-sm mx-auto size-72 mt-4 md:mt-0'>
-      <Doughnut data={data}/>
-
+    <div className='rounded-sm mx-auto size-fit mt-4 md:mt-0'>
+      <Doughnut options={options} data={data}/>
     </div>
   )
 }
@@ -90,5 +98,4 @@ const getPreviousFourYears = () => {
   return labels;
 }
 
-getPreviousFourYears()
 export default LineChart
