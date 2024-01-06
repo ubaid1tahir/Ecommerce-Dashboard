@@ -42,8 +42,8 @@ const LineChart = () => {
       {
         label: "Sales",
         data: [1.1,1.4, 0.3, 1.0],
-        borderColor: "rgba(107,70,193,0.5)",
-        backgroundColor: "#6b46c1"
+        borderColor: "rgba(59, 130, 246,0.5)",
+        backgroundColor: "rgb(59 ,130, 246)"
       }
     ]
   }
@@ -73,8 +73,8 @@ export const DoughnutChart = () => {
       {
         label: "Orders",
         data: [20, 3],
-        borderColor: ["rgb(107,70,193)","rgb(12,43,129)"],
-        backgroundColor: ["rgba(62, 12, 171,0.3)", "rgba(12,43,129,0.3)"],
+        borderColor: ["rgb(107,70,193)","rgb(59 130 246)"],
+        backgroundColor: ["rgba(59, 130, 246,0.3)", "rgba(12,43,129,0.3)"],
         borderWidth: 1
       }
     ]

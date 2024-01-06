@@ -5,11 +5,11 @@ import { HiMiniShoppingBag } from "react-icons/hi2";
 import { FiMessageSquare } from "react-icons/fi";
 
 
-
 const Dashboard = () => {
+    
     return (
         <div className="row-span-11 m-6">
-            <h1 className="text-4xl font-semibold mb-5 bg-gradient-to-r from-indigo-300 to-indigo-500" >Dashboard</h1>
+            <h1 className="text-4xl font-semibold mb-5 bg-gradient-to-r from-blue-300 to-blue-600" >Dashboard</h1>
             <div className="grid grid-cols-2 gap-5 md:grid-cols-4 mb-10">
                 <div className="bg-gray-200 rounded-lg text-center cursor-pointer">
                     <h1 className="text-2xl font-semibold relative"><div className="absolute left-6 hidden lg:block top-1"><FaUsers /></div>Customers</h1>
@@ -33,6 +33,7 @@ const Dashboard = () => {
                 <LineChart />
                 <DoughnutChart />
             </div>
+
 
         </div>
     )
